@@ -1,0 +1,33 @@
+{
+    "name": "mate/laravel-forms",
+    "description": "Blade helpers for quick HTML forms implementation",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mate\\Forms\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mate\\Forms\\FormsServiceProvider"
+            ],
+            "aliases": {
+                "Forms": "Mate\\Forms\\Facades\\Forms"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Agustin Casiva",
+            "email": "agustin@42mate.com"
+        }
+    ],
+    "require": {
+        "spatie/laravel-html": "^3.2"
+    }
+}
