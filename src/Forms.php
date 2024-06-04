@@ -291,4 +291,14 @@ class Forms extends Html
     {
         return parent::submit($text)->addClass('btn-primary');
     }
+
+    /**
+     * Markup for close a Form.
+     *
+     * @return HtmlString
+     */
+    public function close()
+    {
+        return new HtmlString('</form>');
+    }
 }
